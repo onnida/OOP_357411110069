@@ -52,7 +52,7 @@ public class TextVariable {
        b= false;
        System.out.println(b);
    }// main
-    
+
 }// class
 
 

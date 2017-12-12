@@ -10,8 +10,23 @@ public class TextWhileLoop {
             System.out.print (i+" ");
             if (i%10==0)
                 System.out.print ("Hello");
-            i++;
+           i++;
         }//while
+       System.out.println("\n");
+//        int j=1;
+//        do {
+//       System.out.println(j+" ");
+//       j++;
+//        }while (j <= 10);
+         int j=1;
+          do  {
+              System.out.print (j+" ");
+              if (j%2 != 0)
+                  System.out.print ("Hello");
+           j++;
+         }while (j <= 10);
+
+
 
 
 

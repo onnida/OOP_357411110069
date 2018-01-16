@@ -20,7 +20,7 @@ public class TextVariable {
        char c = 'T';
        System.out.println("c = "+c);
  //      System
-       String s = "Hello,Worrld";
+       String s = "Hello,Wold";
        System.out.println(s);
        String name = "film";
        System.out.println(s+" "+name);

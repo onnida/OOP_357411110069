@@ -15,16 +15,16 @@ public class Student {
                 ", name='" + name + '\'' +
                 '}';
     }//toString
-
+    public static String gender = "Male";
     private String id;
     private String major;
     private String faculty;
     private String name;
     //constructor
     //Default constructor
-    private Student (){}
+    public Student (){}
     //create constructor by owner
-    private Student (String id,String m,String f,String n){
+    public Student (String id,String m,String f,String n){
         //assign data to class properties
         this.id = id;
         this.major = m;

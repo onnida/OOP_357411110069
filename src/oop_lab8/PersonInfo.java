@@ -10,6 +10,7 @@ public class PersonInfo {
                 "357411110069",
                 "IS : Management Technology");
         System.out.print(student.toString());
+
         System.out.print(student.getName());
 
         Employee employee = new Employee
@@ -21,6 +22,7 @@ public class PersonInfo {
                         "MC",
                         "20000");
         System.out.print(employee.toString());
+
         System.out.print(employee.getName());
 
     }//main

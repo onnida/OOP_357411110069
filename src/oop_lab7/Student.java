@@ -1,9 +1,13 @@
 package oop_lab7;
+
 //Talking about Student?
-//1.student ID
-//2.Major
-//3.Faculty
-//4.Name
+// 1.Student ID
+// 2.Major
+// 3.Faculty
+// 4.Name
+
+
+import java.lang.reflect.MalformedParametersException;
 
 public class Student {
     @Override
@@ -15,31 +19,33 @@ public class Student {
                 ", name='" + name + '\'' +
                 '}';
     }//toString
+
     public static String gender = "Male";
     private String id;
     private String major;
     private String faculty;
     private String name;
-    //constructor
+    //Constructor
     //Default constructor
-    public Student (){}
+    public Student(){}
     //create constructor by owner
-    public Student (String id,String m,String f,String n){
+    public Student(String id,String m,String f,String n){
         //assign data to class properties
         this.id = id;
-        this.major = m;
         this.faculty = f;
+        this.major = m;
         this.name = n;
     }
     //getter and setter methods
 
+
     public String getId() {
         return id;
-    }
+    }//getId
 
     public void setId(String id) {
         this.id = id;
-    }
+    }//setId
 
     public String getMajor() {
         return major;

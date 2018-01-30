@@ -7,74 +7,47 @@ package oop_lab7;
 //5.country of origin
 
 public class Supercar {
-    private String brand;
+    private String carBrand;
+    private String carColor;
+    private String engSize;
 
-    @Override
-    public String toString() {
-        return "Supercar{" +
-                "brand='" + brand + '\'' +
-                ", color='" + color + '\'' +
-                ", size='" + size + '\'' +
-                ", max='" + max + '\'' +
-                ", origin='" + origin + '\'' +
+    public Supercar (){}
+    public Supercar (String b,String c,String e){
+        this.carBrand = b;
+        this.carColor = c;
+        this.engSize = e;
+    }
+
+    public String getSupercarInfo() {
+        return "SuperCar{" +
+                "carBrand='" + carBrand + '\'' +
+                ", carColor='" + carColor + '\'' +
+                ", engSize='" + engSize + '\'' +
                 '}';
     }
 
-    private String color;
-    private String size;
-    private String max;
-    private String origin;
-    //constructor
-    //Default constructor
-    public Supercar (){}
-    //create constructor by owner
-    public Supercar (String b,String c,String s,String m,String o){
-        //assign data to class properties
-        this.brand = b;
-        this.color =c;
-        this.size = s;
-        this.max = m;
-        this.origin = o;
+
+    public String getCarBrand() {
+        return carBrand;
     }
 
-    public String getBrand() {
-        return brand;
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public String getEngSize() {
+        return engSize;
     }
 
-    public String getColor() {
-        return color;
+    public void setEngSize(String engSize) {
+        this.engSize = engSize;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public String getCarColor() {
+        return carColor;
     }
 
-    public String getSize() {
-        return size;
+    public void setCarColor(String carColor) {
+        this.carColor = carColor;
     }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public String getMax() {
-        return max;
-    }
-
-    public void setMax(String max) {
-        this.max = max;
-    }
-
-    public String getOrigin() {
-        return origin;
-    }
-
-    public void setOrigin(String origin) {
-        this.origin = origin;
-    }
-
 }

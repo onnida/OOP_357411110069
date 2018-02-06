@@ -2,7 +2,7 @@ package oop_lab7;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-public class Supercar {
+public class mySuperCar {
     public static void main(String[] args) {
         ArrayList<Supercar> myCarList = new ArrayList<Supercar>();
         myCarList = inputData(myCarList);
@@ -28,4 +28,4 @@ public class Supercar {
         return myCarList;
     }
 
-}}
+}

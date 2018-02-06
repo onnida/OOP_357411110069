@@ -13,5 +13,9 @@ public class myPersonApp {
         Person person = new Person("12","onnida",address,job);
         System.out.println(person.toString());
 
+        person.getJob().setSalary(2500);
+        System.out.println(person.getJob().getSalary());
+        System.out.println(person.getAddress().getPostCode());
+
     }//main
 }//class
